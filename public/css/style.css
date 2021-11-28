@@ -267,14 +267,15 @@ body {
 }
 
 .hero {
-    height:473px;
+    height:475px;
     background-color:gray;
 }
 
 .hero--hp {
-    background-image:url("../images/logo.png");
+    background-image:url("../images/hero-abair-hp.jpg");
     background-size:cover;
-    background-position:0 -100px;
+    background-position:center;
+    /*background-position:0 -100px;*/
 
 }
 
@@ -361,7 +362,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(52,14,39,1) 0%, rgba
 
 @media only screen and (min-width: 1240px) {
     .hero--hp{
-        background-position:0 -150px;
+       /* background-position:0 -150px; */
     }
 }
 
