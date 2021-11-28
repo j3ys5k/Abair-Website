@@ -229,12 +229,8 @@ img {max-width:100%;}
 }
 
 .col {
-    
     padding:20px;
-
 }
-
-
 
 
 /* Main
@@ -242,10 +238,16 @@ img {max-width:100%;}
 
 a {
     text-decoration:none;
+    color:#1FF4FD;
+    
 }
 
 a:hover {
     text-decoration:underline;
+}
+
+a:visted {
+    color:#1FF4FD;
 }
 
 body {
@@ -275,6 +277,8 @@ body {
     background-image:url("../images/hero-abair-hp.jpg");
     background-size:cover;
     background-position:center;
+    background-color:#3D0E27;
+    
     /*background-position:0 -100px;*/
 
 }
@@ -284,6 +288,10 @@ body {
     align-items: center;
     list-style-type: none;
     padding-left: 0;
+}
+
+.menu a {
+    color:white;
 }
 
 .login {
@@ -305,6 +313,14 @@ body {
     max-width: 500px;
 }
 
+.social-cta {
+
+}
+
+.social-cta__text {
+    width:250px;
+}
+
 .lil-witch {
     max-width:51%;
 }
@@ -322,8 +338,13 @@ body {
 }
 
 .button--yellow {
-    background: rgb(253,197,110);
-background: linear-gradient(90deg, rgba(253,197,110,1) 0%, rgba(251,222,132,1) 59%, rgba(254,154,89,1) 100%);
+    /*background: rgb(253,197,110);
+background: linear-gradient(90deg, rgba(253,197,110,1) 0%, rgba(251,222,132,1) 59%, rgba(254,154,89,1) 100%); */
+background: rgb(251,222,132);
+background: linear-gradient(180deg, rgba(251,222,132,1) 0%, rgba(254,154,89,1) 100%);
+    color:white;
+    text-shadow: 1px 1px 0px rgba(146, 60, 3, 0.6);
+    
 }
 
 .button--teal {
@@ -349,6 +370,10 @@ background: linear-gradient(180deg, rgba(17,176,232,1) 0%, rgba(32,237,250,1) 0%
     text-align:right;
 }
 
+.text-left {
+    text-align:left;
+}
+
 /* Background Colors
 --------------------------------------------------*/
 .bg--grad-darkred {
@@ -360,9 +385,10 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(52,14,39,1) 0%, rgba
 /* Large Styles
 ----------------------------------------------*/
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1472px) {
     .hero--hp{
-       /* background-position:0 -150px; */
+       background-size:auto;
+       background-repeat:no-repeat;
     }
 }
 
@@ -379,6 +405,26 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(52,14,39,1) 0%, rgba
         display: grid;
         grid-template-columns: 100%;
     }
+
+    .mobile-text-center {
+        text-align:center;
+    }
+    .mobile-text-right {
+        text-align:right;
+    }
+    .mobile-text-left {
+        text-align:left;
+    }
+
+    .social-cta__text {
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero--hp{
+        height:291px;
+     }
 }
 
 
